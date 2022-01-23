@@ -1,3 +1,6 @@
+netty\server\EchoClient$1.class
 netty\server\EchoServer$1.class
 netty\server\EchoServer.class
+netty\server\EchoClientHandle.class
 netty\server\EchoServerHandler.class
+netty\server\EchoClient.class
