@@ -33,14 +33,7 @@ public class EchoClient {
                         @Override
                         public void initChannel(SocketChannel ch)
                                 throws Exception {
-                                ch.pipeline().addLast(new EchoClientHandle() {
-                                    @Override
-                                    protected void messageReceived(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
-
-                                    }
-                                });
-
-
+                                ch.pipeline().addLast(new EchoClientHandle());
                         }
                     });
             ChannelFuture f = b.connect().sync();
